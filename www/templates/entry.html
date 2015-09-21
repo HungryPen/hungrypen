@@ -1,0 +1,17 @@
+<ion-view view-title="My Diary Entries">
+  <ion-content>
+<label class="item item-input">
+  <i class="icon ion-search placeholder-icon"></i>
+  <input type="search" placeholder="Search">
+</label>
+    <ion-list>
+      <ion-item ng-repeat="view in entry" href="#/app/entry/{{view.id}}">
+    <a class="item item-thumbnail-left" href="#/app/entry/{{view.id}}">
+      <img src="img/no-image.gif">
+      <h2>{{view.title}}</h2>
+      <p>Nine Inch Nails</p>
+    </a>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
