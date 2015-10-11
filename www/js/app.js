@@ -44,7 +44,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: '/login',
     views: {
       'menuContent': {
-        templateUrl: 'templates/login.html'
+        templateUrl: 'templates/login.html',
+             controller: 'LoginCtrl'
+      }
+    }
+  })
+  
+    .state('app.password', {
+    url: '/password',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/password.html'
       }
     }
   })
@@ -96,5 +106,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/login');
+  $urlRouterProvider.otherwise('/app/post');
 });

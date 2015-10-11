@@ -45,12 +45,7 @@ angular.module('starter.controllers', [])
 
 .controller('entryCtrl', function($scope) {
   $scope.entry = [
-    { title: 'Entry1', id: 1 },
-    { title: 'Entry2', id: 2 },
-    { title: 'Entry3', id: 3 },
-    { title: 'Entry4', id: 4 },
-    { title: 'Entry5', id: 5 },
-    { title: 'Entry6', id: 6 }
+    { title: 'Entry1', id: 1 }
   ];
 })
 
@@ -60,8 +55,10 @@ angular.module('starter.controllers', [])
 
 .controller('LoginCtrl', function($scope, $state) {
   
-  $scope.LogIn = function(logInData) {
-    $state.go('app.entry');
+  $scope.Login = function(logInData) {
+    $state.go('#/app/login');
   };
+   
 
 });
+
